@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alexandre Lotti — Graph Intelligence, Fraud Analytics, Knowledge Graphs e inteligência investigativa.">
+  <title>Alexandre Lotti | Graph Intelligence</title>
+  <style>
+    :root {
+      --bg: #080d0c;
+      --panel: #101917;
+      --green: #32d6a0;
+      --text: #edf5f1;
+      --muted: #a3b5ad;
+      --border: #263b33;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: var(--green); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(1080px, 90%);
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 22px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--green);
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .links { display: flex; gap: 20px; flex-wrap: wrap; }
+
+    .hero { padding: 100px 0 80px; }
+
+    .eyebrow {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.1;
+      margin: 18px 0;
+      letter-spacing: -2px;
+    }
+
+    h1 span, h2 span { color: var(--green); }
+
+    .intro {
+      max-width: 720px;
+      font-size: 19px;
+      color: var(--muted);
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 1px solid var(--green);
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: var(--green);
+      color: #07110d;
+    }
+
+    section { padding: 58px 0; }
+
+    h2 { font-size: 32px; margin-bottom: 12px; }
+
+    .section-intro { color: var(--muted); max-width: 720px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    .card h3 { margin-top: 0; }
+
+    .tag {
+      display: inline-block;
+      color: var(--green);
+      font-size: 12px;
+      border: 1px solid var(--border);
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin: 3px 3px 3px 0;
+    }
+
+    .quote {
+      border-left: 3px solid var(--green);
+      padding: 8px 0 8px 24px;
+      font-size: 23px;
+      max-width: 850px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 65px 0 45px; }
+      .links { gap: 12px; }
+      .quote { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#">ALEXANDRE LOTTI</a>
+      <div class="links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#artigos">Artigos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="eyebrow">Graph Intelligence · Business · Technology</div>
+    <h1>Conectando dados.<br><span>Revelando decisões.</span></h1>
+    <p class="intro">
+      Sou Alexandre Lotti. Desenvolvo estudos e soluções de Graph Intelligence
+      para conectar entidades, revelar relacionamentos ocultos e apoiar
+      decisões em investigação de fraudes, análise de riscos e inteligência operacional.
+    </p>
+    <div class="buttons">
+      <a class="button primary" href="#projetos">Explorar projetos</a>
+      <a class="button" href="https://github.com/lotti-collab">Meu GitHub</a>
+      <a class="button" href="https://www.linkedin.com/in/alexandre-lotti-9ab619ab/">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <div class="eyebrow">Minha abordagem</div>
+      <h2>Inteligência começa com <span>contexto.</span></h2>
+      <p class="section-intro">
+        Dados isolados contam parte da história. Grafos ajudam a revelar
+        conexões entre pessoas, contas, dispositivos, transações e eventos.
+        Combinados com Machine Learning e conhecimento de negócio, podem
+        ampliar a capacidade de análise e investigação.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h3>Graph Analytics</h3>
+          <p>Análise de redes, comunidades e relacionamentos para identificar padrões relevantes.</p>
+          <span class="tag">Neo4j</span>
+          <span class="tag">Cypher</span>
+          <span class="tag">GDS</span>
+        </article>
+        <article class="card">
+          <h3>Fraud Analytics</h3>
+          <p>Estudos de detecção de fraudes, avaliação de modelos e análise do custo dos erros.</p>
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">SQL</span>
+        </article>
+        <article class="card">
+          <h3>Knowledge Graphs & IA</h3>
+          <p>Organização de entidades, conceitos e relações para fornecer contexto à inteligência artificial.</p>
+          <span class="tag">Knowledge Graphs</span>
+          <span class="tag">RAG</span>
+          <span class="tag">Ontologias</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="container">
+      <div class="eyebrow">Laboratório aplicado</div>
+      <h2>Projetos em <span>destaque.</span></h2>
+      <p class="section-intro">
+        Estudos técnicos que exploram problemas, metodologias e possibilidades
+        de aplicação de Graph Intelligence. Consulte os repositórios para
+        verificar código, dados, resultados e limitações de cada projeto.
+      </p>
+      <div class="grid">
+        <article class="card">
+          <h3>NGIF-FRAUD-001</h3>
+          <p>Ontologia para investigação de possíveis fraudes coordenadas em marketplaces, conectando clientes, contas, dispositivos e pedidos.</p>
+          <span class="tag">Fraude</span>
+          <span class="tag">Neo4j</span>
+          <p><a href="https://github.com/lotti-collab">Explorar repositórios →</a></p>
+        </article>
+        <article class="card">
+          <h3>Fraud Analytics & ML</h3>
+          <p>Experimentos com classificação, detecção de anomalias, métricas de desempenho e avaliação de impacto operacional.</p>
+          <span class="tag">Python</span>
+          <span class="tag">ML</span>
+          <p><a href="https://github.com/lotti-collab">Explorar repositórios →</a></p>
+        </article>
+        <article class="card">
+          <h3>Inteligência Investigativa</h3>
+          <p>Estudos de relacionamentos, entidades e evidências para estruturar perguntas investigativas e apoiar análises.</p>
+          <span class="tag">NetworkX</span>
+          <span class="tag">Investigação</span>
+          <p><a href="https://github.com/lotti-collab">Explorar repositórios →</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="artigos">
+    <div class="container">
+      <div class="eyebrow">Ideias e conhecimento</div>
+      <h2>Artigos & <span>publicações.</span></h2>
+      <div class="card">
+        <h3>Graph Intelligence: a camada invisível que transforma IA em Inteligência Operacional</h3>
+        <p>Reflexões sobre contexto, conhecimento de negócio e grafos na construção de sistemas inteligentes.</p>
+        <p><a href="https://medium.com/" target="_blank" rel="noopener noreferrer">Acessar o Medium — adicione aqui o link do artigo →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <p class="quote">
+        “O grafo não acusa: ele organiza conexões para que a investigação faça as perguntas certas.”
+      </p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <div class="eyebrow">Vamos conversar</div>
+      <h2>Conexões que geram <span>conhecimento.</span></h2>
+      <p class="section-intro">
+        Aberto a conversas sobre Graph Intelligence, grafos aplicados a
+        negócios, prevenção a fraudes, Knowledge Graphs e inteligência analítica.
+      </p>
+      <div class="buttons">
+        <a class="button primary" href="https://www.linkedin.com/in/alexandre-lotti-9ab619ab/">Conectar no LinkedIn</a>
+        <a class="button" href="https://github.com/lotti-collab">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p><strong>Alexandre Lotti</strong> · Graph Intelligence</p>
+    <p>Connecting Data. Revealing Decisions.</p>
+    <p>© 2026 · Estudos e projetos técnicos independentes.</p>
+  </div>
+</footer>
+
+</body>
+</html>
